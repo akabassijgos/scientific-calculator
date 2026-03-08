@@ -84,18 +84,7 @@ int main(int argc, char *argv[])
 				if (!errorInExecution)
 				{
 					printf("\e[32mResults : \e[0m");
-					switch (precision)
-					{
-					case 10:
-						printf("%.10Lg\n\n", results);
-						break;
-					case 20:
-						printf("%.20Lg\n\n", results);
-						break;
-					case 30:
-						printf("%.30Lg\n\n", results);
-						break;
-					}
+					printf("%.*Lg\n\n", precision, results);
 				}
 			}
 		}

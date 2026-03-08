@@ -236,12 +236,12 @@ void c_setPrecision(int *precision)
 	printf("\n"
 		   "Select the precision :"
 		   "\n"
-		   "1 - 10 significant digits"
+		   "1 - 06 significant digits"
 		   "\n"
-		   "2 - 20 significant digits"
+		   "2 - 12 significant digits"
 		   "\n"
-		   "3 - 30 significant digits"
-		   "\n\n");
+		   "3 - %d significant digits"
+		   "\n\n", LDBL_DIG);
 	do
 	{
 		scanf("%c", &n);
@@ -251,13 +251,13 @@ void c_setPrecision(int *precision)
 	switch (n)
 	{
 	case '1':
-		*precision = 10;
+		*precision = 6;
 		break;
 	case '2':
-		*precision = 20;
+		*precision = 12;
 		break;
 	case '3':
-		*precision = 30;
+		*precision = LDBL_DIG;
 		break;
 	}
 }

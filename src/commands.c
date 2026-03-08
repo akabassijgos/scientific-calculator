@@ -240,7 +240,7 @@ void c_setPrecision(int *precision)
 		   "\n"
 		   "2 - 12 significant digits"
 		   "\n"
-		   "3 - %d significant digits"
+		   "3 - %d significant digits (default value)"
 		   "\n\n", LDBL_DIG);
 	do
 	{

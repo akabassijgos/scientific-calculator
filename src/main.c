@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	mode[i] = '\0';
 	stopMode[i] = '\0';
 
-	c_setPrecision(&precision);
+	precision = LDBL_DIG; // We use the best accuracy by default
 	c_setMode(mode, false);
 
 	while (strcmp(mode, stopMode) != 0)

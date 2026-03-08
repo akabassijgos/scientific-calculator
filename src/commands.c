@@ -233,7 +233,15 @@ void c_setPrecision(int *precision)
 	}
 
 	char n;
-	printf("\nSelect the precision :\n1 - 10 digits after the decimal point\n2 - 20 digits after the decimal point\n3 - 30 digits after the decimal point\n\n");
+	printf("\n"
+		   "Select the precision :"
+		   "\n"
+		   "1 - 10 significant digits"
+		   "\n"
+		   "2 - 20 significant digits"
+		   "\n"
+		   "3 - 30 significant digits"
+		   "\n\n");
 	do
 	{
 		scanf("%c", &n);
@@ -261,7 +269,7 @@ void c_setPrecision(int *precision)
 void c_displayInfos(int precision)
 {
 	printf("\nRepresentable decimal values : min = (-) %Lg ; max = (-) %Lg \nRepresentable integer values : min = %lld ; max = %lld\n", LDBL_MIN, LDBL_MAX, LLONG_MIN, LLONG_MAX);
-	printf("Display precision of decimal values = %d digits after the decimal point\n", precision);
+	printf("Display precision of decimal values = %d significant digits\n", precision);
 	printf("Length of entries : min = 1 ; max = %d\n", COMMAND_LENGTH);
 	printf("Maximum length of numbers = %d\n\n", MAX_LENGTH_OF_NUMBER - 1);
 	printf("NOTE:\n- The decimal representation is used by default. It is always used in Calculator mode.\n- The integer representation is used only when it is the best fit. It is used in tools that operate on integers.\n\n");

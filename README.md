@@ -105,7 +105,7 @@ The calculator can be controlled using textual commands. A command can be entere
 
 * `setMode` : choose a mode. The program currently provides three main modes: Calculator, Tools and Documentation.
 * `back` : return to the previous menu level.
-* `setPrecision` : set decimal display precision (supported: 10, 20, 30).
+* `setPrecision` : set decimal display precision (supported: 6, 12, default).
 * `displayInfos` : show representable value ranges and precision info.
 * `clear` : clear the terminal screen.
 * `exit` : quit the program.

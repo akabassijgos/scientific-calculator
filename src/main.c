@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	mode[i] = '\0';
 	stopMode[i] = '\0';
 
-	c_setPrecision(&precision);
+	precision = LDBL_DIG; // We use the best accuracy by default
 	c_setMode(mode, false);
 
 	while (strcmp(mode, stopMode) != 0)
@@ -84,18 +84,7 @@ int main(int argc, char *argv[])
 				if (!errorInExecution)
 				{
 					printf("\e[32mResults : \e[0m");
-					switch (precision)
-					{
-					case 10:
-						printf("%.10Lg\n\n", results);
-						break;
-					case 20:
-						printf("%.20Lg\n\n", results);
-						break;
-					case 30:
-						printf("%.30Lg\n\n", results);
-						break;
-					}
+					printf("%.*Lg\n\n", precision, results);
 				}
 			}
 		}

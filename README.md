@@ -28,7 +28,7 @@ If you want to use another compiler or change compilation options, you can do so
 Clone the repository:
 
 ```bash
-git clone https://github.com/akabassijgos/scientific-calculator.git
+git clone https://github.com/esofkesran/scientific-calculator.git
 cd scientific-calculator
 ```
 
